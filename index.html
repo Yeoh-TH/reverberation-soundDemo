@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/7b985f1e3c.js" crossorigin="anonymous"></script>
+    <title>Reverberation</title>
+    <meta name="description" content="Teammates: Rishav and Nathan!"/>
+    <meta name="author" content="Yeoh Tian Huai"/>
+    <script type="module" crossorigin src="/assets/index-3f730bde.js"></script>
+    <link rel="stylesheet" href="/assets/index-45be456c.css">
+  </head>
+  <body>
+    <div id="app"></div>
+    
+    <div class="App">
+      
+      <canvas id="graph"></canvas>
+      <h1>
+        Frequency: <span id="frequencyDisplay">hertz</span>
+      </h1>
+      <input
+        id="frequency"
+        class="slider"
+        type="range"
+        min="262"
+        max="880"
+        value="440"
+      />
+      <h1>
+        Amplitude: <span id="amplitudeDisplay"></span>
+      </h1>
+      <input
+        id="amplitude"
+        class="slider"
+        type="range"
+        min="0"
+        max="1"
+        value="1"
+      />
+      <button id="playButton"><i class='fas fa-play-circle' style="color: #0014c5;"></i></button>
+      <button id="stopButton"><i class='fas fa-stop-circle' style="color: #C5B100;"></i></button>
+    </div>
+    
+    
+  </body>
+</html>
