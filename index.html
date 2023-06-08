@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image" href="./TeamReverberation!.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://kit.fontawesome.com/7b985f1e3c.js" crossorigin="anonymous"></script>
     <script
@@ -27,7 +27,7 @@
     <title>Reverberation</title>
     <meta name="description" content="Developed by Yeoh Tian Huai Teammates: Nathan Quek and Rishav Ganguly!"/>
     <meta name="author" content="Yeoh Tian Huai"/>
-    <script type="module" crossorigin src="/reverberation-soundDemo/assets/index-a5270bc8.js"></script>
+    <script type="module" crossorigin src="/reverberation-soundDemo/assets/index-a03a6f66.js"></script>
     <link rel="stylesheet" href="/reverberation-soundDemo/assets/index-16dc0879.css">
   </head>
   <body>
@@ -71,7 +71,7 @@
         type="range"
         min="262"
         max="880"
-        value="440"
+        value="444"
       />
       <h1>
         Amplitude<sub>2</sub>: <span id="amplitudeDisplay2"></span>
@@ -86,14 +86,19 @@
       />
       <button id="playButton2"><i class='fas fa-play-circle' style="color: #0014C5;"></i></button>
       <button id="stopButton2"><i class='fas fa-pause-circle' style="color: #C50014;"></i></button>
-
+      
+      <h1 style="font-size: 5vw;">Both sine waves together!</h1>
+      <canvas id="graph3"></canvas>
+      <p style="font-family: avenir; font-size: 2vw;">Try and hear the beating effect if you play two very similiar sine waves, 440 and 444, together!</p>
     </div>
+    
     
     
     
   </body>
   <section>
     <p style="font-family: avenir;font-size: 4vw;">Developer: Yeoh TH (Tian Huai)<br>
+      <img style="height: 50vw; width: 50vw;" src="./THDeveloperLogomark1.png"></img>
       <form id="feedbackForm">
         <label id="feedbackForm">Provide us feedback!</label><br></br>
         <input class="inputFormFields" name="Email" type="email" placeholder="Email Address">
