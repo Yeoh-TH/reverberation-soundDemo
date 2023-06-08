@@ -8,8 +8,8 @@
     <title>Reverberation</title>
     <meta name="description" content="Teammates: Rishav and Nathan!"/>
     <meta name="author" content="Yeoh Tian Huai"/>
-    <script type="module" crossorigin src="/reverberation-soundDemo/assets/index-3f730bde.js"></script>
-    <link rel="stylesheet" href="/reverberation-soundDemo/assets/index-45be456c.css">
+    <script type="module" crossorigin src="/reverberation-soundDemo/assets/index-2e780d5b.js"></script>
+    <link rel="stylesheet" href="/reverberation-soundDemo/assets/index-19002ce9.css">
   </head>
   <body>
     <div id="app"></div>
@@ -39,10 +39,45 @@
         max="1"
         value="1"
       />
-      <button id="playButton"><i class='fas fa-play-circle' style="color: #0014c5;"></i></button>
-      <button id="stopButton"><i class='fas fa-stop-circle' style="color: #C5B100;"></i></button>
+      <button id="playButton"><i class='fas fa-play-circle' style="color: #0014C5;"></i></button>
+      <button id="stopButton"><i class='fas fa-pause-circle' style="color: #C50014;"></i></button>
+
+      <canvas id="graph2"></canvas>
+      <h1>
+        Frequency<sub>2</sub>: <span id="frequencyDisplay2">hertz</span>
+      </h1>
+      <input
+        id="frequency2"
+        class="slider"
+        type="range"
+        min="262"
+        max="880"
+        value="440"
+      />
+      <h1>
+        Amplitude<sub>2</sub>: <span id="amplitudeDisplay2"></span>
+      </h1>
+      <input
+        id="amplitude2"
+        class="slider"
+        type="range"
+        min="0"
+        max="1"
+        value="1"
+      />
+      <button id="playButton2"><i class='fas fa-play-circle' style="color: #0014C5;"></i></button>
+      <button id="stopButton2"><i class='fas fa-pause-circle' style="color: #C50014;"></i></button>
+
     </div>
     
     
+    
   </body>
+  <footer>
+    <p style="font-family: avenir;">Developer: Yeoh TH (Tian Huai)<br>
+      <a href="mailto:yeoh_tian_huai@s2022.ssts.edu.sg" target="_blank">
+        <button style="background-color: #00C5B1;border: none;font-size: 10vw;color: #0077c5;"><i class="far fa-envelope"></i></button>
+      </a>
+    </p>
+  </footer>
 </html>
