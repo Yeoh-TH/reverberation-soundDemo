@@ -27,8 +27,8 @@
     <title>Reverberation</title>
     <meta name="description" content="Developed by Yeoh Tian Huai Teammates: Nathan Quek and Rishav Ganguly!"/>
     <meta name="author" content="Yeoh Tian Huai"/>
-    <script type="module" crossorigin src="/reverberation-soundDemo/assets/index-c9ef615f.js"></script>
-    <link rel="stylesheet" href="/reverberation-soundDemo/assets/index-16dc0879.css">
+    <script type="module" crossorigin src="/reverberation-soundDemo/assets/index-9d06bcde.js"></script>
+    <link rel="stylesheet" href="/reverberation-soundDemo/assets/index-7923aa44.css">
   </head>
   <body>
     <div id="app"></div>
@@ -58,8 +58,8 @@
         max="1"
         value="1"
       />
-      <button id="playButton"><i class='fas fa-play-circle' style="color: #0014C5;"></i></button>
-      <button id="stopButton"><i class='fas fa-pause-circle' style="color: #C50014;"></i></button>
+      <button id="playButton"><i class='fas fa-play-circle' style="color: #EEEEEE;"></i></button>
+      <button id="stopButton"><i class='fas fa-pause-circle' style="color: #00ADB5;"></i></button>
 
       <canvas id="graph2"></canvas>
       <h1>
@@ -84,8 +84,8 @@
         max="1"
         value="1"
       />
-      <button id="playButton2"><i class='fas fa-play-circle' style="color: #0014C5;"></i></button>
-      <button id="stopButton2"><i class='fas fa-pause-circle' style="color: #C50014;"></i></button>
+      <button id="playButton2"><i class='fas fa-play-circle' style="color: #EEEEEE;"></i></button>
+      <button id="stopButton2"><i class='fas fa-pause-circle' style="color: #00ADB5;"></i></button>
       
       <h1 style="font-size: 5vw;">Both sine waves together now!</h1>
       
@@ -100,10 +100,10 @@
     <p style="font-family: avenir;font-size: 4vw;">Developer: Yeoh TH (Tian Huai)<br>
       <img style="height: 30vw; width: 30vw;" src="./THDeveloperLogomark1.png"></img>
       <form id="feedbackForm">
-        <label id="feedbackForm">Provide us feedback!</label><br></br>
-        <input class="inputFormFields" name="Email" type="email" placeholder="Email Address">
+        <label style="color: #00ADB5;" id="feedbackForm" >Provide us feedback!</label><br></br>
+        <input class="inputFormFields" name="Email" type="email" placeholder="Email Address" autocomplete="email">
         <br></br>
-        <input class="inputFormFields" name="Name" type="text" placeholder="Name">
+        <input class="inputFormFields" name="Name" type="text" placeholder="Name" autocomplete="given-name">
         <br></br>
         <textarea class="inputFormFields" name="Feedback" rows="5" cols="25" placeholder="Provide feedback for our sound demonstration! - Yeoh TH"></textarea> 
         <br></br>
@@ -111,7 +111,7 @@
       <button class="inputFormFields" onclick='SubForm()'>Submit</button>
       <br>
       <a href="mailto:yeoh_tian_huai@s2022.ssts.edu.sg" target="_blank">
-        <button style="background-color: #00C5B1;border: none;font-size: 10vw;color: #0077c5;"><i class="far fa-envelope"></i></button>
+        <button style="background-color: var(--backGround);border: none;font-size: 10vw;color: #EEEEEE;"><i class="far fa-envelope"></i></button>
       </a>
     </p>
   </section>
