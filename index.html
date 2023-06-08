@@ -5,11 +5,30 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://kit.fontawesome.com/7b985f1e3c.js" crossorigin="anonymous"></script>
+    <script
+		src="https://code.jquery.com/jquery-3.4.1.js"
+		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+		crossorigin="anonymous"></script>
+	<script>
+		function SubForm (){
+			$.ajax({
+				url:"https://api.apispreadsheets.com/data/ZbExtiKOnwIsjtqd/",
+				type:"post",
+				data:$("#feedbackForm").serializeArray(),
+				success: function(){
+					alert("Form Data Submitted :) Have a nice day! - Yeoh TH")
+				},
+				error: function(){
+					alert("There was an error :( Come to one of us to figure out what is the problem - Yeoh TH")
+				}
+			});
+		}
+	</script>
     <title>Reverberation</title>
-    <meta name="description" content="Teammates: Rishav and Nathan!"/>
+    <meta name="description" content="Developed by Yeoh Tian Huai Teammates: Nathan Quek and Rishav Ganguly!"/>
     <meta name="author" content="Yeoh Tian Huai"/>
-    <script type="module" crossorigin src="/reverberation-soundDemo/assets/index-2e780d5b.js"></script>
-    <link rel="stylesheet" href="/reverberation-soundDemo/assets/index-19002ce9.css">
+    <script type="module" crossorigin src="/reverberation-soundDemo/assets/index-a5270bc8.js"></script>
+    <link rel="stylesheet" href="/reverberation-soundDemo/assets/index-16dc0879.css">
   </head>
   <body>
     <div id="app"></div>
@@ -73,11 +92,22 @@
     
     
   </body>
-  <footer>
-    <p style="font-family: avenir;">Developer: Yeoh TH (Tian Huai)<br>
+  <section>
+    <p style="font-family: avenir;font-size: 4vw;">Developer: Yeoh TH (Tian Huai)<br>
+      <form id="feedbackForm">
+        <label id="feedbackForm">Provide us feedback!</label><br></br>
+        <input class="inputFormFields" name="Email" type="email" placeholder="Email Address">
+        <br></br>
+        <input class="inputFormFields" name="Name" type="text" placeholder="Name">
+        <br></br>
+        <textarea class="inputFormFields" name="Feedback" rows="5" cols="25" placeholder="Provide feedback for our sound demonstration! - Yeoh TH"></textarea> 
+        <br></br>
+      </form>
+      <button class="inputFormFields" onclick='SubForm()'>Submit</button>
+      <br>
       <a href="mailto:yeoh_tian_huai@s2022.ssts.edu.sg" target="_blank">
         <button style="background-color: #00C5B1;border: none;font-size: 10vw;color: #0077c5;"><i class="far fa-envelope"></i></button>
       </a>
     </p>
-  </footer>
+  </section>
 </html>
