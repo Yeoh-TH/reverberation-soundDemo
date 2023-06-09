@@ -27,7 +27,7 @@
     <title>Reverberation</title>
     <meta name="description" content="Developed by Yeoh Tian Huai Teammates: Nathan Quek and Rishav Ganguly!"/>
     <meta name="author" content="Yeoh Tian Huai"/>
-    <script type="module" crossorigin src="/reverberation-soundDemo/assets/index-84a254c7.js"></script>
+    <script type="module" crossorigin src="/reverberation-soundDemo/assets/index-17ffbe64.js"></script>
     <link rel="stylesheet" href="/reverberation-soundDemo/assets/index-e49d6efd.css">
   </head>
   <body>
@@ -37,7 +37,7 @@
       
       <canvas id="graph"></canvas>
       <h1>
-        Frequency: <span id="frequencyDisplay">hertz</span>
+        Frequency: <span id="frequencyDisplay"></span> hertz
       </h1>
       <input
         id="frequency"
@@ -48,22 +48,22 @@
         value="440"
       />
       <h1>
-        Amplitude: <span id="amplitudeDisplay"></span>
+        Amplitude: <span id="amplitudeDisplay"></span> %
       </h1>
       <input
         id="amplitude"
         class="slider"
         type="range"
         min="0"
-        max="1"
-        value="1"
+        max="100"
+        value="50"
       />
       <button id="playButton"><i class='fas fa-play-circle' style="color: #EEEEEE;"></i></button>
       <button id="stopButton"><i class='fas fa-pause-circle' style="color: #00ADB5;"></i></button>
 
       <canvas id="graph2"></canvas>
       <h1>
-        Frequency<sub>2</sub>: <span id="frequencyDisplay2">hertz</span>
+        Frequency<sub>2</sub>: <span id="frequencyDisplay2"></span> hertz
       </h1>
       <input
         id="frequency2"
@@ -74,15 +74,15 @@
         value="444"
       />
       <h1>
-        Amplitude<sub>2</sub>: <span id="amplitudeDisplay2"></span>
+        Amplitude<sub>2</sub>: <span id="amplitudeDisplay2"></span> %
       </h1>
       <input
         id="amplitude2"
         class="slider"
         type="range"
         min="0"
-        max="1"
-        value="1"
+        max="100"
+        value="50"
       />
       <button id="playButton2"><i class='fas fa-play-circle' style="color: #EEEEEE;"></i></button>
       <button id="stopButton2"><i class='fas fa-pause-circle' style="color: #00ADB5;"></i></button>
