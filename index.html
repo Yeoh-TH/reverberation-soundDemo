@@ -27,8 +27,8 @@
     <title>Reverberation</title>
     <meta name="description" content="Developed by Yeoh Tian Huai Teammates: Nathan Quek and Rishav Ganguly!"/>
     <meta name="author" content="Yeoh Tian Huai"/>
-    <script type="module" crossorigin src="/reverberation-soundDemo/assets/index-e278b361.js"></script>
-    <link rel="stylesheet" href="/reverberation-soundDemo/assets/index-e493b400.css">
+    <script type="module" crossorigin src="/reverberation-soundDemo/assets/index-a3730208.js"></script>
+    <link rel="stylesheet" href="/reverberation-soundDemo/assets/index-1f2cf942.css">
   </head>
   <body>
     <div id="app"></div>
@@ -37,7 +37,7 @@
       <h2 style="color:#00ADB5; font-family: avenir; font-size: 3rem;">By <abbr title="Yeoh Tian Huai, Nathan Quek and Rishav Ganguly">Team Reverberation<abbr></h2>
       <canvas id="graph"></canvas>
       <h1>
-        Frequency: <span id="frequencyDisplay"></span> hertz
+        Frequency: <span><input id="frequencyDisplay" class="numberOption" type="number" min="110" max="880" step="1" value="440"></span> hertz
       </h1>
       <input
         id="frequency"
@@ -46,9 +46,10 @@
         min="110"
         max="880"
         value="440"
+        step="1"
       />
       <h1>
-        Amplitude: <span id="amplitudeDisplay"></span> %
+        Amplitude: <input id="amplitudeDisplay" class="numberOption" type="number" min="0" max="100" step="1" value="50"> %
       </h1>
       <input
         id="amplitude"
@@ -63,7 +64,7 @@
       <br>
       <canvas id="graph2"></canvas>
       <h1>
-        Frequency<sub>2</sub>: <span id="frequencyDisplay2"></span> hertz
+        Frequency<sub>2</sub>: <input id="frequencyDisplay2" class="numberOption" type="number" min="110" max="880" step="1" value="444"> hertz
       </h1>
       <input
         id="frequency2"
@@ -72,9 +73,10 @@
         min="110"
         max="880"
         value="444"
+        step="1"
       />
       <h1>
-        Amplitude<sub>2</sub>: <span id="amplitudeDisplay2"></span> %
+        Amplitude<sub>2</sub>: <input id="amplitudeDisplay2" class="numberOption" type="number" min="0" max="100" step="1" value="50"> %
       </h1>
       <input
         id="amplitude2"
@@ -87,11 +89,20 @@
       <!--use step="0.01" in range sliders next time!!!-->
       <button id="playButton2"><i class='fas fa-play-circle' style="color: #00ADB5;"></i></button>
       <button id="stopButton2"><i class='fas fa-pause-circle' style="color: #EEEEEE;"></i></button>
+
+      <h1 style="font-size: 5vw;">Try the metronome!</h1>
+
+
+      <h1>Beats Per Second (BPS): <input id="bpsInput" class="numberOption" type="number" min="1" max="12" step="1" value="2">
+      </h1> 
+      <button id="playButton3"><i class='fas fa-play-circle' style="color: #00ADB5;"></i></button>
+      <button id="stopButton3"><i class='fas fa-pause-circle' style="color: #EEEEEE;"></i></button>
       
       <h1 style="font-size: 5vw;">Both sine waves together now!</h1>
       
       <p style="font-family: avenir; font-size: 3vw;">Try and hear the beating effect if you play any 2 waves with a difference in frequency of less then or equal to 6, like for example, 440 and 444, together!</p>
     </div>
+    
     
     
     
@@ -101,11 +112,11 @@
       <img style="height: 30vw; width: 30vw;" src="./THDeveloperLogomark1.png"></img>
       <form id="feedbackForm">
         <label style="color: #00ADB5;" id="feedbackForm" >Provide us feedback!</label><br></br>
-        <input class="inputFormFields" name="Email" type="email" placeholder="Email Address" autocomplete="email">
+        <input class="inputFormFields" name="Email" type="email" placeholder="Email Address" autocomplete="email" >
         <br></br>
-        <input class="inputFormFields" name="Name" type="text" placeholder="Name" autocomplete="given-name">
+        <input class="inputFormFields" name="Name" type="text" placeholder="Name" autocomplete="given-name" required>
         <br></br>
-        <textarea class="inputFormFields" name="Feedback" rows="5" cols="25" placeholder="Provide feedback for our sound demonstration! - Yeoh TH"></textarea> 
+        <textarea class="inputFormFields" name="Feedback" rows="5" cols="25" required placeholder="Provide feedback for our sound demonstration! - Yeoh TH"></textarea> 
         <br></br>
         <button class="inputFormFields" onclick='SubForm()'>Submit <i class="	fas fa-arrow-alt-circle-up"></i></button>
       </form>
