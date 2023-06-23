@@ -12,7 +12,7 @@
 	<script>
 		function SubForm (){
 			$.ajax({
-				url:"https://api.apispreadsheets.com/data/ZbExtiKOnwIsjtqd/",
+				url:"https://api.apispreadsheets.com/data/05RDbZcEkL9w9pEX/",
 				type:"post",
 				data:$("#feedbackForm").serializeArray(),
 				success: function(){
@@ -149,11 +149,11 @@
       <form id="feedbackForm">
         <label style="color: #00ADB5;" id="feedbackForm" >Provide us feedback!</label><br></br>
         <input class="inputFormFields" name="Email" type="email" placeholder="Email Address" autocomplete="email" >
-        <br></br>
-        <input class="inputFormFields" name="Name" type="text" placeholder="Name" autocomplete="given-name" required>
-        <br></br>
-        <textarea class="inputFormFields" name="Feedback" rows="5" cols="25" required placeholder="Provide feedback for our sound demonstration! - Yeoh TH"></textarea> 
-        <br></br>
+        <br>
+        <input class="inputFormFields" name="Name" type="text" placeholder="Name" autocomplete="given-name">
+        <br>
+        <textarea class="inputFormFields" name="Feedback" rows="5" cols="25" placeholder="Provide feedback for our sound demonstration! - Yeoh TH" required></textarea> 
+        <br>
         <button class="inputFormFields" onclick='SubForm()'>Submit <i class="	fas fa-arrow-alt-circle-up"></i></button>
       </form>
       <br>
